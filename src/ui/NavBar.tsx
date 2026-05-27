@@ -1,3 +1,5 @@
+import { gradients } from "../lib/constants"
+
 export default function Navbar() {
     const navbarSections = [
         { name: 'About', href: '#about' },
@@ -10,10 +12,10 @@ export default function Navbar() {
 
     return (
         <nav className="fixed top-0 left-0 right-0 z-50">
-            <div className="backdrop-blur md:w-full lg:w-2/3 border border-gray-600 mx-auto mt-1 lg:rounded-full flex gap-5">
+            <div className="backdrop-blur md:w-full lg:w-2/3 mx-auto mt-1 lg:rounded-full flex gap-5">
                 {navbarSections.map(section => (
-                    <a key={section.name} href={section.href} className="text-lg rounded-full hover:bg-opacity-20 bg-opacity-0 bg-white text-white text-center p-3 px-5 my-1 mx-auto">
-                        <div className="font-bold justify-center mx-auto">
+                    <a key={section.name} href={section.href} className={`text-md rounded-full text-center p-3 px-5 my-1 mx-auto ${gradients.hover}`}>
+                        <div className="font-bold font-heading uppercase justify-center mx-auto">
                                 {section.name}
                         </div>
                     </a>

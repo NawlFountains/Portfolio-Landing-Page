@@ -13,3 +13,8 @@ export type Education = {
     place: string
     time: string
 }
+
+export type Stack = {
+    discipline: string
+    tools: string[]
+}

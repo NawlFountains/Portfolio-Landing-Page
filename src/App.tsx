@@ -1,10 +1,11 @@
-import { Education, Project } from './definitions';
+import { Education, Project, Stack } from './lib/definitions';
 import './index.css';
 import AboutCard from './ui/AboutCard';
 import ContactCard from './ui/ContactCard';
 import EducationCard from './ui/EducationCard';
 import ExperienceCard from './ui/ExperienceCard';
 import IntroductionCard from './ui/IntroductionCard';
+import { gradients } from './lib/constants'
 import NavBar from './ui/NavBar'
 import ProjectCard from './ui/ProjectCard';
 import StackCard from './ui/StackCard';
@@ -56,27 +57,45 @@ function App() {
         }
     ]
 
-       const educations: Education[] = [
-            {
-                title: 'Bachelor Degree in Computer Science',
-                institution_name: 'Universidad Nacional del Sur',
-                description: 'With specialized coursework in Data Mining, Artificial Intelligence & Data Visualization. Thesis developed in collaboration with the EVC-CIN research program, extending my work as a Research Intern to study Neural Network architectures and their optimization strategies.',
-                place: 'Buenos Aires, Argentina',
-                time: '2019 - 2025',
-            }, {
-                title: 'Certificate CI/CD with Github Actions',
-                institution_name: 'EATI',
-                description: 'Coursework of 20 hours using Github Actions and Docker for workflows',
-                place: 'Buenos Aires, Argentina',
-                time: '2023'
-            }, {
-                title: 'FCE Cambdrige English',
-                institution_name: 'Cambdrige Academy',
-                description: 'Scored 179 (Certified B2)',
-                place: 'Buenos Aires, Argentina',
-                time: '2018'
-            }
-        ]
+    const educations: Education[] = [
+        {
+            title: 'Bachelor Degree in Computer Science',
+            institution_name: 'Universidad Nacional del Sur',
+            description: 'With specialized coursework in Data Mining, Artificial Intelligence & Data Visualization. Thesis developed in collaboration with the EVC-CIN research program, extending my work as a Research Intern to study Neural Network architectures and their optimization strategies.',
+            place: 'Buenos Aires, Argentina',
+            time: '2019 - 2025',
+        }, {
+            title: 'Certificate CI/CD with Github Actions',
+            institution_name: 'EATI',
+            description: 'Coursework of 20 hours using Github Actions and Docker for workflows',
+            place: 'Buenos Aires, Argentina',
+            time: '2023'
+        }, {
+            title: 'FCE Cambdrige English',
+            institution_name: 'Cambdrige Academy',
+            description: 'Scored 179 (Certified B2)',
+            place: 'Buenos Aires, Argentina',
+            time: '2018'
+        }
+    ]
+    
+    const stacks: Stack[] = [ {
+            discipline: 'AI/ML',
+            tools: ['Python', 'Tensorflow','PyTorch', 'Plotly', 'Pandas', 'Numpy', 'Scipy', 'RAGAS', 'LangChain', 'Qdrant', 'EDA']
+        }, {
+            discipline: 'Web Dev',
+            tools: ['React', 'Next.js','Node.js', 'Streamlit'],
+        }, {
+            discipline: 'Mobile Development',
+            tools: ['Expo' , 'Expo-Router', 'Expo-Notifications', 'NativeWind', 'Kotlin', 'Jetpack Compose'],
+        }, {
+            discipline: 'Languages',
+            tools: ['Python', 'Typescript', 'Java', 'C'],
+        }, {
+            discipline: 'DevOps / Tools',
+            tools: ['CI/CD', 'Docker', 'Github Actions'],
+        }
+    ]
   return (
     <div className='bg-black text-white'>
         {/* TODO fix */}
@@ -88,17 +107,18 @@ function App() {
                 <IntroductionCard/>
             </div>
             <div id='about'>
+                <h1 className={`text-3xl font-heading uppercase font-bold p-5 ${gradients.title}`}> {'>'} About</h1>
                 <AboutCard/>
             </div>
             <div id='experience'>
-                <h1 className='text-3xl uppercase font-bold text-center p-5'>Experience</h1>
+                <h1 className={`text-3xl font-heading uppercase font-bold p-5 ${gradients.title}`}> {'>'} Experience</h1>
                 <ExperienceCard/>
             </div>
             <div id='education'>
-                <h1 className='text-3xl uppercase font-bold text-center p-5'>Education</h1>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-stretch">
+                <h1 className={`text-3xl font-heading uppercase font-bold p-5 ${gradients.title}`}> {'>'} Education</h1>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-5 items-stretch">
                     <EducationCard education={educations[0]}/>
-                    <div className="flex flex-col">
+                    <div className="flex flex-col gap-3">
                         {educations.slice(1).map(education => (
                             <EducationCard key={education.title} education={education}/>
                         ))}
@@ -106,19 +126,24 @@ function App() {
                 </div>
             </div>
             <div id='projects'>
-                <h1 className='text-3xl uppercase font-bold text-center p-5'>Projects</h1>
-                <div className='grid grid-cols-1 lg:grid-cols-3 gap-6'>
+
+                <h1 className={`text-3xl font-heading uppercase font-bold p-5 ${gradients.title}`}> {'>'} Projects</h1>
+                <div className='grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch'>
                     {projects.map( project => (
                         <ProjectCard key = {project.name} project={project} />
                     ))}
                 </div>
             </div>
             <div id='stack'>
-                <h1 className='text-3xl uppercase font-bold text-center p-5'>Stack</h1>
-                <StackCard tool={''}/>
+                <h1 className={`text-3xl font-heading uppercase font-bold p-5 ${gradients.title}`}> {'>'} Stack</h1>
+                <div className="grid grid-cols-1 lg:grid-cols-5 gap-5 items-stretch">
+                    {stacks.map( stack => (
+                        <StackCard stack={stack}/>
+                    ))}
+                </div>
             </div>
             <div id='contact'>
-                <h1 className='text-3xl uppercase font-bold text-center p-5'>Contact</h1>
+                <h1 className={`text-3xl font-heading uppercase font-bold p-5 ${gradients.title}`}> {'>'} Contact</h1>
                 <ContactCard/>
             </div>
         </div>

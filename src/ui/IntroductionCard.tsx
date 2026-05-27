@@ -1,3 +1,4 @@
+import { gradients } from "../lib/constants"
 import { GithubIcon, LinkedInIcon, MailIcon } from "./Icon"
 
 export default function IntroductionCard() {
@@ -17,7 +18,7 @@ export default function IntroductionCard() {
             </div>
             <div className="flex flex-col gap-2 lg:flex-row lg:gap-5 text-center">
                 {contactLink.map( link => (
-                    <a key={link.name} href={link.href} className='flex flex-1 text-center py-2 hover:bg-opacity-30 rounded-full bg-opacity-0 bg-white items-center justify-center gap-2'>
+                    <a key={link.name} href={link.href} className={`flex flex-1 text-center py-2 rounded-full items-center justify-center gap-2 ${gradients.hover}`}>
                         <link.Icon className=''/> 
                         <div>
                             {link.name}

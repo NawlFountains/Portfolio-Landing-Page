@@ -7,6 +7,10 @@ module.exports = {
     extend: {
       colors: {
         'dark-gray': '#1c1c1c',
+      },
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],        // body 
+        heading: ["Space Grotesk", "sans-serif"], 
       }
     },
   },
