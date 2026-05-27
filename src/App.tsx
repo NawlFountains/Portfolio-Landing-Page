@@ -102,7 +102,7 @@ function App() {
         <div className='py-5'>.</div> 
 
         <NavBar/>
-        <div className='flex flex-col justify-between items-center mx-20 px-20 gap-10'>
+        <div className='flex flex-col justify-between items-center mx-20 p-20 gap-12'>
             <div>
                 <IntroductionCard/>
             </div>

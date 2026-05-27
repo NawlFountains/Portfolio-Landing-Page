@@ -5,7 +5,7 @@ export default function ExperienceCard() {
 
     return (
             <div className={`text-white text grid grid-cols-1 lg:flex p-[1px] my-2 rounded-2xl ${gradients.border}`}>
-                <div className='flex flex-col bg-dark-gray p-2 px-6 rounded-2xl mx-auto w-full lg:h-full gap-3' >
+                <div className='flex flex-col bg-dark-gray py-4 px-6 rounded-2xl mx-auto w-full lg:h-full gap-3' >
                     <div className= 'text-lg font-bold'>
                         Reserch Intern
                     </div>

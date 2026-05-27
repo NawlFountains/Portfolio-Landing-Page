@@ -1,6 +1,6 @@
 import { Project } from "../lib/definitions";
 import { gradients } from '../lib/constants'
-import { GithubIcon } from "./Icon";
+import { ExternalLinkIcon, GithubIcon } from "./Icon";
 
 interface ProjectCardProps {
     project: Project
@@ -24,8 +24,11 @@ export default function ProjectCard( props : ProjectCardProps) {
                             Source
                             </a>
                     </div>
-                    <div className={`rounded-full p-2 ${gradients.hover}`}>
-                        <a href={props.project.live_demo_link}>Live Demo</a>
+                    <div className='flex gap-2'>
+                        <a href={props.project.live_demo_link} className={`flex rounded-full p-2 gap-2 ${gradients.hover}`}>
+                            <ExternalLinkIcon/>
+                            Live Demo
+                            </a>
                     </div>
                 </div>
             </div>
