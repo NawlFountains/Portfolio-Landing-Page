@@ -18,7 +18,7 @@ export default function IntroductionCard() {
             </div>
             <div className="flex flex-col gap-2 lg:flex-row lg:gap-8 mx-auto text-center">
                 {contactLink.map( link => (
-                    <a key={link.name} href={link.href} className={`flex flex-1 text-center p-2 px-4 rounded-full items-center justify-center gap-2 ${gradients.hover}`}>
+                    <a key={link.name} href={link.href} className={`flex flex-1 text-center text-gray-400 p-2 px-4 rounded-full items-center justify-center gap-2 ${gradients.hover}`}>
                         <link.Icon className=''/> 
                         <div>
                             {link.name}

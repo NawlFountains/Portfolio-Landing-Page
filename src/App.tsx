@@ -143,9 +143,12 @@ function App() {
                 </div>
             </div>
             <div id='contact'>
-                <h1 className={`text-3xl font-heading uppercase font-bold p-5 ${gradients.title}`}> {'>'} Contact</h1>
+                <h1 className={`text-3xl text-center font-heading uppercase font-bold p-5 ${gradients.title}`}> {'>'} Contact</h1>
                 <ContactCard/>
             </div>
+            <p className="text-center text-gray-600 text-sm py-4">
+                © 2025 Nahuel Fuentes
+            </p>
         </div>
     </div>
   );
