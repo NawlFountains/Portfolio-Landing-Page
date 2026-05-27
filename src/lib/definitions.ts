@@ -3,7 +3,9 @@ export type Project = {
     description: string
     stack: string[]
     repo_link: string
-    live_demo_link: string
+    live_demo_link: string | null
+    icon_path: string 
+    showcase_video_path: string
 }
 
 export type Education = {

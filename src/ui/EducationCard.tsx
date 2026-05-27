@@ -1,6 +1,6 @@
 import { gradients } from "../lib/constants";
 import { Education } from "../lib/definitions";
-import { CalendarIcon, MapPinIcon } from "./Icon";
+import { CalendarIcon, InstitutionIcon, MapPinIcon } from "./Icon";
 
 interface EducationCardProps {
     education: Education
@@ -14,9 +14,10 @@ export default function EducationCard( props: EducationCardProps) {
                 <div className= 'text-lg font-bold'>
                     {props.education.title}
                 </div>
-                <div className="text-lg">
-                    {props.education.institution_name}
-                    </div>
+                <div className="text-lg flex gap-2">
+                    <InstitutionIcon/>  {props.education.institution_name}
+                </div>
+            <div className="w-16 h-[1px] bg-purple-500/40"/>
                 <div className="flex-wrap my-auto">
                     {props.education.description}
                 </div>

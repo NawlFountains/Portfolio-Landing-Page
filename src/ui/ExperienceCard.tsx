@@ -1,5 +1,5 @@
 import { gradients } from "../lib/constants";
-import { CalendarIcon, MapPinIcon } from "./Icon";
+import { CalendarIcon, InstitutionIcon, MapPinIcon } from "./Icon";
 
 export default function ExperienceCard() {
 
@@ -9,9 +9,10 @@ export default function ExperienceCard() {
                     <div className= 'text-lg font-bold'>
                         Reserch Intern
                     </div>
-                    <div className="text-lg">
-                        Universidad Nacional del Sur
+                    <div className="text-lg flex gap-2">
+                        <InstitutionIcon/> Universidad Nacional del Sur
                     </div>
+                    <div className="w-16 h-[1px] bg-purple-500/40"/>
                     <div className="flex-wrap">
                         Conducted state-of-the-art research in Artificial Intelligence, focusing on neural radiance fields (NeRFs),
                         Evaluated model performance with PSNR and SSIM, identifying limitations and suggesting architectural improvements.

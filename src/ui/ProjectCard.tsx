@@ -10,8 +10,18 @@ export default function ProjectCard( props : ProjectCardProps) {
     return (
         <div className={`p-[1px] rounded-xl ${gradients.border}`}>
             <div className="flex flex-col text-white rounded-xl bg-dark-gray hover:bg-gradient-to-r from-dark-gray via-dark-gray to-purple-900  p-3 gap-4 px-6 h-full">
-                <h1 className={`text-2xl font-bold my-2 py-2 border-b ${gradients.subtitle}`}>{props.project.name}</h1>
+                <div className="flex flex-row border-b items-center gap-2">
+                    <img 
+                        className="h-8 w-8"
+                        src={`${process.env.PUBLIC_URL}${props.project.icon_path}`} 
+                        alt={`icon ${props.project.name}`}/>
+                    <h1 className={`text-2xl font-bold my-2 py-2 ${gradients.subtitle}`}>{props.project.name}</h1>
+                </div>
                 <p className="">{props.project.description}</p>
+                <img 
+                    className="rounded-xl w-full aspect-video object-cover rounded-lg"
+                    src={`${process.env.PUBLIC_URL}${props.project.showcase_video_path}`} 
+                    alt={`demo ${props.project.name}`}/>
                 <div className="flex flex-wrap gap-2 items-center mt-auto">
                     {props.project.stack.map( tool => (
                         <p className="p-2 py-1 rounded-full text-sm text-center bg-gradient-to-r from-gray-700 to-gray-800">{tool}</p>
@@ -25,10 +35,12 @@ export default function ProjectCard( props : ProjectCardProps) {
                             </a>
                     </div>
                     <div className='flex gap-2'>
-                        <a href={props.project.live_demo_link} className={`flex rounded-full p-2 gap-2 ${gradients.hover}`}>
-                            <ExternalLinkIcon/>
-                            Live Demo
-                            </a>
+                        {props.project.live_demo_link && (
+                            <a href={props.project.live_demo_link} className={`flex rounded-full p-2 gap-2 ${gradients.hover}`}>
+                                <ExternalLinkIcon/>
+                                Live Demo
+                                </a>
+                        )}
                     </div>
                 </div>
             </div>

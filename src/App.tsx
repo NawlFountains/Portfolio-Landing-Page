@@ -26,7 +26,9 @@ function App() {
                 'EDA'
             ],
             repo_link: 'https://github.com/NawlFountains/RAG-Tutor-Helper',
-            live_demo_link: 'https://rag-academic-tutor.streamlit.app/'
+            live_demo_link: 'https://rag-academic-tutor.streamlit.app/',
+            icon_path: '/icon/rag_tutor_icon.png',
+            showcase_video_path: '/videos/rag_tutor_demo.gif'
         }, {
             name: 'O&G Forecast and Underperform Detection',
             description: 'Exploratory Analysis on public dataset from 2006-2026 of Oil Producion, using Arp Decline curve and Prophet for forecasting wells production and flagging possible underperformance',
@@ -39,7 +41,9 @@ function App() {
                 'EDA'
             ],
             repo_link: 'https://github.com/NawlFountains/Vaca-muerta-production-forecast',
-            live_demo_link: 'https://vaca-muerta-underperformance-forecast.streamlit.app/'
+            live_demo_link: 'https://vaca-muerta-underperformance-forecast.streamlit.app/',
+            icon_path: '/icon/forecaster_icon.png',
+            showcase_video_path: '/videos/forecaster_demo.gif'
         }, {
             name: 'PetMeds ',
             description: 'PetMeds allows households to track and coordinate medication schedules for their pets. Family members get notified when a dose is due and when someone has given it, preventing double-dosing and missed medications.',
@@ -53,7 +57,9 @@ function App() {
                 'CI/CD'
             ],
             repo_link: 'https://github.com/NawlFountains/PetMeds',
-            live_demo_link: 'https://vaca-muerta-underperformance-forecast.streamlit.app/' //TODO
+            live_demo_link: null,
+            icon_path: '/icon/pet_meds_icon.png',
+            showcase_video_path: '/videos/pet_meds_demo.gif',
         }
     ]
 
@@ -97,9 +103,12 @@ function App() {
         }
     ]
   return (
-    <div className='bg-black text-white'>
-        {/* TODO fix */}
-        <div className='py-5'>.</div> 
+    <div className='text-white'>
+        <div className="fixed inset-0 -z-10">
+            <div className='absolute inset-0 bg-black'></div>
+            <div className="absolute inset-0 bg-[radial-gradient(circle,_rgba(168,85,247,0.35)_1px,_transparent_1px)] bg-[size:24px_24px]" />
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_transparent_50%,_black_100%)]" />
+        </div>
 
         <NavBar/>
         <div className='flex flex-col justify-between items-center mx-20 p-20 gap-12'>

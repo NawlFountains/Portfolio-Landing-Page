@@ -25,7 +25,7 @@ export default function Navbar() {
 
     return (
         <nav className="fixed top-0 left-0 right-0 z-50">
-                <div className={`backdrop-blur md:w-full lg:w-2/3 mx-auto mt-1 lg:rounded-full flex gap-5 ${isAtTop ? 'border' : ''}`}>
+                <div className={`backdrop-blur md:w-full lg:w-2/3 mx-auto mt-1 lg:rounded-full flex gap-5 ${isAtTop ? 'lg:border border-b border-purple-500/80' : ''}`}>
                     {navbarSections.map(section => (
                         <a key={section.name} href={section.href} className={`text-md rounded-full text-center p-3 px-5 my-1 mx-auto ${gradients.hover}`}>
                             <div className="font-bold font-heading uppercase justify-center mx-auto">
