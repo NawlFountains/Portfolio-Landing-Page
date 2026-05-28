@@ -8,7 +8,7 @@ interface ProjectCardProps {
 
 export default function ProjectCard( props : ProjectCardProps) {
     return (
-        <div className={`p-[1px] rounded-xl ${gradients.border}`}>
+        <div className={`p-[1px] rounded-xl ${gradients.border} shadow-lg shadow-purple-900/80`}>
             <div className="flex flex-col text-white rounded-xl bg-dark-gray hover:bg-gradient-to-r from-dark-gray via-dark-gray to-purple-900  p-3 gap-4 px-6 h-full">
                 <div className="flex flex-row border-b items-center gap-2">
                     <img 
