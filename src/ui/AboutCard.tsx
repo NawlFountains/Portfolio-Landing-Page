@@ -5,7 +5,7 @@ export default function AboutCard() {
         <div className={`p-[1px] rounded-2xl ${gradients.border} shadow-lg shadow-purple-900/80`}>
             <div className="bg-dark-gray rounded-2xl grid grid-cols-1 lg:flex p-2 px-5">
                 <div className="p-4">
-                    <img className="max-w-md lg:max-w-sm h-full object-cover object-top rounded-xl mx-auto grayscale-[30%]" alt="photo_of_Me" src={`${process.env.PUBLIC_URL}/images/profile_picture.jpg`}/>
+                    <img className="max-w-md w-full lg:w-auto lg:max-w-sm h-full object-cover object-top rounded-xl mx-auto grayscale-[30%]" alt="photo_of_Me" src={`${process.env.PUBLIC_URL}/images/profile_picture.jpg`}/>
                 </div>
                 <div className="text-lg p-5 my-auto space-y-8">
                     <p className={`text-2xl font-heading font-bold  ${gradients.subtitle}`}>

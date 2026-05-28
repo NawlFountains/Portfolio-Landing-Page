@@ -111,7 +111,7 @@ function App() {
         </div>
 
         <NavBar/>
-        <div className='flex flex-col justify-between items-center mx-20 p-20 gap-12'>
+        <div className='flex flex-col justify-between items-center mx-5 p-5 mt-20 sm:mx-20 sm:p-20 gap-12'>
             <div>
                 <IntroductionCard/>
             </div>
