@@ -60,6 +60,22 @@ function App() {
             live_demo_link: null,
             icon_path: '/icon/pet_meds_icon.png',
             showcase_video_path: '/videos/pet_meds_demo.gif',
+        }, {
+            name: 'QueryNeRF',
+            description: 'NeRF optimization based upon point density, reducing the sampling region volume up to 25%, developed during my time as a Research Intern in the EVC-CIN program.',
+            stack: [
+                'Computer Graphics',
+                'TensorFlow',
+                'PyTorch',
+                'Pandas',
+                'Python',
+                'Numpy',
+                'CUDA',
+            ],
+            repo_link: 'https://www.kaggle.com/code/nahuelfuentes/tiny-nerf-refactor',
+            live_demo_link: null,
+            icon_path: '',
+            showcase_video_path: '/images/queryNerf_demo.png'
         }
     ]
 

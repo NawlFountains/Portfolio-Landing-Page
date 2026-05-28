@@ -11,10 +11,12 @@ export default function ProjectCard( props : ProjectCardProps) {
         <div className={`p-[1px] rounded-xl ${gradients.border} shadow-lg shadow-purple-900/80`}>
             <div className="flex flex-col text-white rounded-xl bg-dark-gray hover:bg-gradient-to-r from-dark-gray via-dark-gray to-purple-900  p-3 gap-4 px-6 h-full">
                 <div className="flex flex-row border-b items-center gap-2">
+                    {props.project.icon_path && (
                     <img 
                         className="h-8 w-8"
                         src={`${process.env.PUBLIC_URL}${props.project.icon_path}`} 
                         alt={`icon ${props.project.name}`}/>
+                    )}
                     <h1 className={`text-2xl font-bold my-2 py-2 ${gradients.subtitle}`}>{props.project.name}</h1>
                 </div>
                 <p className="">{props.project.description}</p>
