@@ -45,8 +45,8 @@ function App() {
             icon_path: '/icon/forecaster_icon.png',
             showcase_video_path: '/videos/forecaster_demo.gif'
         }, {
-            name: 'PetMeds ',
-            description: 'PetMeds allows households to track and coordinate medication schedules for their pets. Family members get notified when a dose is due and when someone has given it, preventing double-dosing and missed medications.',
+            name: 'PetPillPal',
+            description: 'PetPillPal allows households to track and coordinate medication schedules for their pets. Family members get notified when a dose is due and when someone has given it, preventing double-dosing and missed medications.',
             stack: [
                 'Expo',
                 'Expo-Router',
@@ -56,10 +56,10 @@ function App() {
                 'NativeWind',
                 'CI/CD'
             ],
-            repo_link: 'https://github.com/NawlFountains/PetMeds',
-            live_demo_link: null,
-            icon_path: '/icon/pet_meds_icon.png',
-            showcase_video_path: '/videos/pet_meds_demo.gif',
+            repo_link: 'https://github.com/NawlFountains/PetPillPal',
+            live_demo_link: 'https://PetPillPal.vercel.app/',
+            icon_path: '/icon/pet_pill_pal_icon.png',
+            showcase_video_path: '/videos/pet_pill_pal_demo.gif',
         }, {
             name: 'QueryNeRF',
             description: 'NeRF optimization based upon point density, reducing the sampling region volume up to 25%, developed during my time as a Research Intern in the EVC-CIN program.',
