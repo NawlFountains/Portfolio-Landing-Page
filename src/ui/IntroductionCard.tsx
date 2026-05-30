@@ -3,7 +3,7 @@ import { GithubIcon, LinkedInIcon, MailIcon } from "./Icon"
 import { useLanguage } from '../lib/LanguageContext';
 
 export default function IntroductionCard() {
-	const { t, language, toggle } = useLanguage()
+	const { t } = useLanguage()
     const contactLink = [
             { name:'Github', Icon: GithubIcon ,href:'https://github.com/NawlFountains/'},
             { name:'LinkedIn', Icon: LinkedInIcon, href:'https://linkedin.com/in/nahuel-fuentes-423a35192/'},
