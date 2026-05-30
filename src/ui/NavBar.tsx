@@ -1,11 +1,13 @@
 import { gradients } from "../lib/constants"
 import { useState, useEffect } from "react"
 import { CrossIcon, HamburgerIcon } from "./Icon"
+import { useLanguage } from '../lib/LanguageContext'
 
 export default function Navbar() {
 
     const [isAtTop, setIsAtTop] = useState(true)
     const [isOpen, setIsOpen] = useState(false)
+    const { t, language, toggle } = useLanguage()
 
     useEffect(() => {
         const handleScroll = () => {
@@ -17,12 +19,12 @@ export default function Navbar() {
     }, [])
 
     const navbarSections = [
-        { name: 'About', href: '#about' },
-        { name: 'Experience' , href: '#experience'},
-        { name: 'Education', href: '#education' },
-        { name: 'Projects', href: '#projects' },
-        { name: 'Stack', href: '#stack' },
-        { name: 'Contact', href: '#contact' }
+        { name: t.nav.about, href: '#about' },
+        { name: t.nav.experience, href: '#experience'},
+        { name: t.nav.education, href: '#education' },
+        { name: t.nav.projects, href: '#projects' },
+        { name: t.nav.stack, href: '#stack' },
+        { name: t.nav.contact, href: '#contact' }
     ]
 
     return (
@@ -30,26 +32,37 @@ export default function Navbar() {
             <div className={`backdrop-blur md:w-full lg:w-2/3 mx-auto mt-1 lg:rounded-full ${isAtTop ? 'lg:border border-b border-purple-500/80' : ''}`}>
                 
                 {/* Desktop menu */}
-                <div className="hidden lg:flex gap-5">
+                <div className="hidden lg:flex items-center justify-between gap-5">
+			<div className='flex gap-5 mx-auto'>
                     {navbarSections.map(section => (
-                        <a key={section.name} href={section.href} className={`text-md rounded-full text-center p-3 px-5 my-1 mx-auto ${gradients.hover}`}>
+                        <a key={section.name} href={section.href} className={`text-md rounded-full text-center p-3 px-5 my-1 ${gradients.hover}`}>
                             <div className="font-bold font-heading uppercase">
                                 {section.name}
                             </div>
                         </a>
                     ))}
+			<button onClick={toggle} 
+			className={`text-md rounded-full text-center p-3 px-5 my-1 font-bold font-heading uppercase ${gradients.hover}`}>
+			    {language === "en" ? "EN" : "ES"}
+			</button>
+			</div>
                 </div>
 
                 {/* Mobile menu */}
                 <div className="lg:hidden flex items-center justify-between px-5 py-3">
-                    <span className={`font-heading font-bold uppercase ${gradients.subtitle}`}>Nahuel</span>
-                    <button onClick={() => setIsOpen(!isOpen)} className="text-white">
-                        {isOpen ? (
-                            <CrossIcon/>
-                        ) : (
-                            <HamburgerIcon/>
-                        )}
-                    </button>
+                    <span className={`font-heading font-bold uppercase ${gradients.subtitle}`}>Nahuel</span>	
+		    <div className='items-center flex gap-5'>
+			<button onClick={toggle} className='font-bold'>
+			    {language === "en" ? "EN" : "ES"}
+			</button>
+			    <button onClick={() => setIsOpen(!isOpen)} className="text-white">
+				{isOpen ? (
+				    <CrossIcon/>
+				) : (
+				    <HamburgerIcon/>
+				)}
+			    </button>	
+		</div>
                 </div>
 
                 {isOpen && (

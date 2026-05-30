@@ -1,7 +1,9 @@
 import { gradients } from "../lib/constants"
 import { GithubIcon, LinkedInIcon, MailIcon } from "./Icon"
+import { useLanguage } from '../lib/LanguageContext';
 
 export default function IntroductionCard() {
+	const { t, language, toggle } = useLanguage()
     const contactLink = [
             { name:'Github', Icon: GithubIcon ,href:'https://github.com/NawlFountains/'},
             { name:'LinkedIn', Icon: LinkedInIcon, href:'https://linkedin.com/in/nahuel-fuentes-423a35192/'},
@@ -11,10 +13,10 @@ export default function IntroductionCard() {
     return (
          <div className='flex flex-col text-2xl m-10 rounded-2xl w-full lg:w-2/3 mx-auto gap-10'>
             <div className="text-center">
-                Hi, I'm Nahuel
+	    	{t.intro.greeting}
             </div>
             <div className='text-center'>
-                I'm a Computer Scientist that build intelligent systems. From neural radiance fields to RAG pipelines — I work across the full stack of modern AI and software engineering.
+	    	{t.intro.description}
             </div>
             <div className="flex flex-col gap-2 lg:flex-row lg:gap-8 mx-auto text-center">
                 {contactLink.map( link => (

@@ -1,6 +1,8 @@
 import { GithubIcon, LinkedInIcon, MailIcon } from "./Icon"
+import { useLanguage } from '../lib/LanguageContext'
 
 export default function ContactCard() {
+	const { t } = useLanguage()
     const links = [
         { name: "Github", Icon: GithubIcon, href: "https://github.com/NawlFountains/" },
         { name: "LinkedIn", Icon: LinkedInIcon, href: "https://linkedin.com/in/nahuel-fuentes-423a35192/" },
@@ -10,7 +12,7 @@ export default function ContactCard() {
         <div className="flex flex-col items-center gap-8 py-20">
 
             <p className="text-gray-400 text-center max-w-md">
-                Have a project in mind or just want to connect? Feel free to reach out.
+	    	{t.contact.reach_out}
             </p>
 
             <a            
@@ -35,7 +37,7 @@ export default function ContactCard() {
             </div>
 
             <p className="text-gray-600 text-sm mt-8">
-                Buenos Aires, Argentina
+	    	{t.contact.location}
             </p>
         </div>
     )

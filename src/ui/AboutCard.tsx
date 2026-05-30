@@ -1,6 +1,8 @@
 import { gradients } from "../lib/constants";
+import { useLanguage } from "../lib/LanguageContext"
 
 export default function AboutCard() {
+	const { t } = useLanguage()
     return (
         <div className={`p-[1px] rounded-2xl ${gradients.border} shadow-lg shadow-purple-900/80`}>
             <div className="bg-dark-gray rounded-2xl grid grid-cols-1 lg:flex p-2 px-5">
@@ -9,16 +11,13 @@ export default function AboutCard() {
                 </div>
                 <div className="text-lg p-5 my-auto space-y-8">
                     <p className={`text-2xl font-heading font-bold  ${gradients.subtitle}`}>
-                        CS Graduate · Argentina
+		    	{t.about.title}
                     </p>
                     <p>
-                        I'm drawn to problems that sit at the edge of what's currently possible. 
-                        Whether that's understanding how a network routes packets, how a model learns to represent a 3D scene, or how to make software that actually scales
-                        — I want to know how things work at a deep level.
+		    	{t.about.first_paragraph}
                     </p>
                     <p>
-                        I'm based in Argentina, recently graduated in Computer Science, and always looking for the next interesting problem to dig into.
-                        I care a lot about writing clean, intentional code and building things that are worth building.
+		    	{t.about.second_paragraph}
                     </p>
                 </div>
             </div>

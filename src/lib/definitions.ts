@@ -16,6 +16,14 @@ export type Education = {
     time: string
 }
 
+export type Experience = {
+    title: string
+    company_name: string
+    description: string
+    place: string
+    time: string
+}
+
 export type Stack = {
     discipline: string
     tools: string[]
