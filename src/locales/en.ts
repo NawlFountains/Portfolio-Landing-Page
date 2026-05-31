@@ -32,7 +32,7 @@ export const en = {
 		},
 		{
 			name: 'ScripIt',
-			description: 'A web interface to run my personal scripts from any device - no terminal, no setup. Built for myself and for sharings tools with non-techincal users.',
+			description: 'A web interface to run my personal scripts from any device - no terminal, no setup. Built for myself and for sharings tools with non-technical users.',
 		},
 		{
 
