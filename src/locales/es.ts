@@ -31,7 +31,7 @@ export const es = {
 		},
 		{
 			name: 'ScripIt',
-			description: 'Simple aplicación FullStack que facilita el uso de script que uso con normalidad, les agrega una interfaz UI. Se connecta con un Backend realizado usando FastAPI que implementa los scripts.'
+			description: 'Una interfaz web para utilizar mis scripts personales desde cualquier dispositivo sin necesidad de descargarlos. Construido para mi uso y para compartir herramientas con gente sin conocimiento técnico.'
 		},
 		{
 			name: 'QueryNeRF',

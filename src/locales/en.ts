@@ -32,7 +32,7 @@ export const en = {
 		},
 		{
 			name: 'ScripIt',
-			description: 'Simple FullStack application that enables the usage of scripts that I normally use. Connected through a FastAPI backend that provides the endpoints for the scripts usage.',
+			description: 'A web interface to run my personal scripts from any device - no terminal, no setup. Built for myself and for sharings tools with non-techincal users.',
 		},
 		{
 
