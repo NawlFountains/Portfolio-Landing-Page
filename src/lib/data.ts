@@ -46,6 +46,24 @@ export const projectsMeta = [
 	},
 	{
 		stack: [
+			'FastAPI',
+			'Python',
+			'Typescript',
+			'React',
+			'React Router',
+			'Tailwind CSS',
+			'Railway',
+			'Vercel',
+			'BeautifulSoup4',
+			'pypdf',
+		],
+		repo_link: 'https://github.com/NawlFountains/scripit-frontend',
+		live_demo_link: 'https://scripit.vercel.app/',
+		icon_path: '/icon/scripit_icon.ico',
+		showcase_video_path: '/videos/scripit_demo.gif',
+	},
+	{
+		stack: [
 			'Computer Graphics',
 			'TensorFlow',
 			'PyTorch',
@@ -63,7 +81,7 @@ export const projectsMeta = [
 
 export const stackMeta = [
 	{ tools: ['Python', 'Tensorflow','PyTorch', 'Plotly', 'Pandas', 'Numpy', 'Scipy', 'RAGAS', 'LangChain', 'Qdrant', 'EDA'] },
-	{ tools: ['React', 'Next.js','Node.js', 'Streamlit'] },
+	{ tools: ['React', 'React Router','Tailwind CSS', 'FastAPI', 'Next.js','Node.js', 'Streamlit'] },
 	{ tools: ['Expo' , 'Expo-Router', 'Expo-Notifications', 'NativeWind', 'Kotlin', 'Jetpack Compose'] } ,
         { tools: ['Python', 'Typescript', 'Java', 'C'] },
         { tools: ['CI/CD', 'Docker', 'Github Actions'] },	

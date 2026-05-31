@@ -31,6 +31,10 @@ export const en = {
 			description: 'PetPillPal allows households to track and coordinate medication schedules for their pets. Family members get notified when a dose is due and when someone has given it, preventing double-dosing and missed medications.',
 		},
 		{
+			name: 'ScripIt',
+			description: 'Simple FullStack application that enables the usage of scripts that I normally use. Connected through a FastAPI backend that provides the endpoints for the scripts usage.',
+		},
+		{
 
 			name: 'QueryNeRF',
 			description: 'NeRF optimization based upon point density, reducing the sampling region volume up to 25%, developed during my time as a Research Intern in the EVC-CIN program.',

@@ -30,6 +30,10 @@ export const es = {
 			description: 'PetPillPal permite a los hogares rastrear y coordinar los horarios de medicación de sus mascotas. Los miembros de la familia reciben notificaciones cuando una dosis está pendiente o cuando alguien ya la administró, evitando doble dosificación y dosis olvidadas.',
 		},
 		{
+			name: 'ScripIt',
+			description: 'Simple aplicación FullStack que facilita el uso de script que uso con normalidad, les agrega una interfaz UI. Se connecta con un Backend realizado usando FastAPI que implementa los scripts.'
+		},
+		{
 			name: 'QueryNeRF',
 			description: 'Optimización de NeRF basada en densidad de puntos, reduciendo el volumen de la región de muestreo hasta un 25%, desarrollada durante mi tiempo como Becario de investigación en el programa EVC-CIN.',
 		},
