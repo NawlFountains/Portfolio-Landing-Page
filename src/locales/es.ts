@@ -18,6 +18,10 @@ export const es = {
 	},
 	projects: [
 		{
+			name: 'Textbook to Knowledge Graph',
+			description: 'Un pipeline completo de procesamiento de lenguaje natural (NLP) que ingiere documentos académicos, extrae entidades y relaciones semánticas, y genera un gráfico de conocimiento interactivo.',
+		},
+		{
 			name: 'RAG Tutor',
 			description: 'Un chatbot basado en RAG con embeddings dinámicos que toma documentos y los usa como base de conocimiento al chatear con un LLM.',
 		},

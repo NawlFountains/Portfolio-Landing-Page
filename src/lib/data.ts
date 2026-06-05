@@ -1,6 +1,23 @@
 export const projectsMeta = [
 	{
 		stack: [
+			'Python',
+			'spaCy',
+			'NetworkX',
+			'PyMuPDF',
+			'Tesseract OCR',
+			'PMI',
+			'TextRank',
+			'Streamlit',
+			'Pyvis',
+		],
+		repo_link: 'https://github.com/NawlFountains/textbook-to-knowledge-graph',
+		live_demo_link: 'https://textbook-to-knowledge-graph.streamlit.app/',
+		icon_path: '',
+		showcase_video_path: '/videos/textbook_to_knowledge_graph_demo.gif'
+	},
+	{
+		stack: [
 			'LangChain',
 			'Qdrant',
 			'Python',
@@ -80,7 +97,7 @@ export const projectsMeta = [
 ]
 
 export const stackMeta = [
-	{ tools: ['Python', 'Tensorflow','PyTorch', 'Plotly', 'Pandas', 'Numpy', 'Scipy', 'RAGAS', 'LangChain', 'Qdrant', 'EDA'] },
+	{ tools: ['Tensorflow', 'PyTorch', 'Plotly', 'Pandas', 'Numpy', 'Scipy', 'RAGAS', 'LangChain', 'Qdrant', 'spaCy', 'NetworkX', 'PyMuPDF', 'Tesseract OCR', 'TextRank'] },
 	{ tools: ['React', 'React Router','Tailwind CSS', 'FastAPI', 'Next.js','Node.js', 'Streamlit'] },
 	{ tools: ['Expo' , 'Expo-Router', 'Expo-Notifications', 'NativeWind', 'Kotlin', 'Jetpack Compose'] } ,
         { tools: ['Python', 'Typescript', 'Java', 'C'] },
