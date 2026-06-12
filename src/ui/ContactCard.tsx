@@ -1,5 +1,6 @@
 import { GithubIcon, LinkedInIcon, MailIcon } from "./Icon"
 import { useLanguage } from '../lib/LanguageContext'
+import { card } from '../lib/constants'
 
 export default function ContactCard() {
 	const { t } = useLanguage()
@@ -9,16 +10,15 @@ export default function ContactCard() {
     ]
 
     return (
-        <div className="flex flex-col items-center gap-8 py-20">
+        <div className={`flex flex-col items-center gap-8 py-20  ${ card.textBodyColor}`}>
 
-            <p className="text-gray-400 text-center max-w-md">
+            <p className="text-center max-w-md">
 	    	{t.contact.reach_out}
             </p>
 
             <a            
                 href="mailto:nahuelfuentes2001@gmail.com"
-                className="flex items-center gap-2 px-8 py-3 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 text-white font-heading hover:shadow-[0_0_20px_rgba(168,85,247,0.5)] transition-all duration-300"
-            >
+                className={`flex items-center gap-2 px-8 py-3 rounded-full font-heading bg-gruv-fg1 hover:bg-gruv-orange hover:text-gruv-fg0 shadow-md shadow-gruv-bg0/40 transition-all duration-300`}>
                 <MailIcon className="w-5 h-5" />
                 nahuelfuentes2001@gmail.com
             </a>
@@ -28,8 +28,7 @@ export default function ContactCard() {
                     <a
                         key={link.name}
                         href={link.href}
-                        className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors duration-300"
-                    >
+                        className={`flex items-center gap-2 hover:text-gruv-orange text-gruv-fg0 transition-colors duration-300`}>
                         <link.Icon className="w-5 h-5" />
                         {link.name}
                     </a>

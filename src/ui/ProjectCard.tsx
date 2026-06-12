@@ -1,5 +1,5 @@
 import { Project } from "../lib/definitions";
-import { gradients } from '../lib/constants'
+import { gradients, card, stack } from '../lib/constants'
 import { ExternalLinkIcon, GithubIcon } from "./Icon";
 
 interface ProjectCardProps {
@@ -8,9 +8,9 @@ interface ProjectCardProps {
 
 export default function ProjectCard( props : ProjectCardProps) {
     return (
-        <div className={`p-[1px] rounded-xl ${gradients.border} shadow-lg shadow-purple-900/80`}>
-            <div className="flex flex-col text-white rounded-xl bg-dark-gray hover:bg-gradient-to-r from-dark-gray via-dark-gray to-purple-900  p-3 gap-4 px-6 h-full">
-                <div className="flex flex-row border-b items-center gap-2">
+        <div className={`p-[1px] rounded-xl ${gradients.border} shadow-lg shadow-gruv-bg0`}>
+            <div className={`flex flex-col rounded-xl ${card.textBodyColor} ${card.background} p-3 gap-4 px-6 h-full`}>
+                <div className="flex flex-row border-b border-gruv-gray items-center gap-2">
                     {props.project.icon_path && (
                     <img 
                         className="h-8 w-8"
@@ -26,7 +26,7 @@ export default function ProjectCard( props : ProjectCardProps) {
                     alt={`demo ${props.project.name}`}/>
                 <div className="flex flex-wrap gap-2 items-center mt-auto">
                     {props.project.stack.map( tool => (
-                        <p className="p-2 py-1 rounded-full text-sm text-center bg-gradient-to-r from-gray-700 to-gray-800">{tool}</p>
+                        <p className={`p-2 py-1 rounded-full text-sm text-center ${stack.background} ${stack.textColor}`}>{tool}</p>
                     ))}
                 </div>
                 <div className="flex flex-wrap gap-5 mt-auto">

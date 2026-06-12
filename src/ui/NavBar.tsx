@@ -1,4 +1,4 @@
-import { gradients } from "../lib/constants"
+import { gradients, card } from "../lib/constants"
 import { useState, useEffect } from "react"
 import { CrossIcon, HamburgerIcon } from "./Icon"
 import { useLanguage } from '../lib/LanguageContext'
@@ -29,10 +29,10 @@ export default function Navbar() {
 
     return (
         <nav className="sticky sm:fixed top-0 left-0 right-0 z-50">
-            <div className={`backdrop-blur md:w-full lg:w-2/3 mx-auto mt-1 lg:rounded-full ${isAtTop ? 'lg:border border-b border-purple-500/80' : ''}`}>
+            <div className={`md:w-full lg:w-2/3 mx-auto py-1 lg:rounded-full ${isAtTop ? `lg:border border-b border-gruv-fg3 bg-gruv-fg1` : 'backdrop-blur'}`}>
                 
                 {/* Desktop menu */}
-                <div className="hidden lg:flex items-center justify-between gap-5">
+                <div className={`hidden lg:flex items-center justify-between gap-5 ${card.textHeaderColor}`}>
 			<div className='flex gap-5 mx-auto'>
                     {navbarSections.map(section => (
                         <a key={section.name} href={section.href} className={`text-md rounded-full text-center p-3 px-5 my-1 ${gradients.hover}`}>
@@ -42,7 +42,7 @@ export default function Navbar() {
                         </a>
                     ))}
 			<button onClick={toggle} 
-			className={`text-md rounded-full text-center p-3 px-5 my-1 font-bold font-heading uppercase ${gradients.hover}`}>
+			className={`text-md text-center p-3 px-5 my-1 font-bold font-heading uppercase rounded-xl hover:text-gruv-orange ${card.textBodyColor}`}>
 			    {language === "en" ? "EN" : "ES"}
 			</button>
 			</div>
@@ -51,11 +51,11 @@ export default function Navbar() {
                 {/* Mobile menu */}
                 <div className="lg:hidden flex items-center justify-between px-5 py-3">
                     <span className={`font-heading font-bold uppercase ${gradients.subtitle}`}>Nahuel</span>	
-		    <div className='items-center flex gap-5'>
+		    <div className={`items-center flex gap-5 ${card.textBodyColor}`}>
 			<button onClick={toggle} className='font-bold'>
 			    {language === "en" ? "EN" : "ES"}
 			</button>
-			    <button onClick={() => setIsOpen(!isOpen)} className="text-white">
+			    <button onClick={() => setIsOpen(!isOpen)} className={`${card.textHeaderColor}`}>
 				{isOpen ? (
 				    <CrossIcon/>
 				) : (

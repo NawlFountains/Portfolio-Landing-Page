@@ -1,4 +1,4 @@
-import { gradients } from "../lib/constants";
+import { gradients, card} from "../lib/constants";
 import { CalendarIcon, InstitutionIcon, MapPinIcon } from "./Icon";
 import { Experience } from '../lib/definitions'
 
@@ -8,15 +8,15 @@ interface ExperienceCardProps {
 export default function ExperienceCard( props : ExperienceCardProps) {
 
     return (
-            <div className={`text-white text grid grid-cols-1 lg:flex p-[1px] my-2 rounded-2xl ${gradients.border} shadow-lg shadow-purple-900/80`}>
-                <div className='flex flex-col bg-dark-gray py-4 px-6 rounded-2xl mx-auto w-full lg:h-full gap-3' >
-                    <div className= 'text-lg font-bold'>
+            <div className={`text grid grid-cols-1 lg:flex p-[1px] my-2 rounded-2xl ${gradients.border} ${card.shadow}`}>
+                <div className={`flex flex-col ${card.background} ${card.textBodyColor} py-4 px-6 rounded-2xl mx-auto w-full lg:h-full gap-3`} >
+                    <div className= {`text-lg font-bold ${card.textHeaderColor}`}>
 			{props.experience.title}
                     </div>
-                    <div className="text-lg flex gap-2">
+                    <div className={`text-lg flex gap-2 ${card.textHeaderColor}`}>
                         <InstitutionIcon/> {props.experience.company_name} 
                     </div>
-                    <div className="w-16 h-[1px] bg-purple-500/40"/>
+                    <div className="w-16 h-[1px] bg-gruv-gray/40"/>
                     <div className="flex-wrap">
 		    	{props.experience.description}
                     </div>

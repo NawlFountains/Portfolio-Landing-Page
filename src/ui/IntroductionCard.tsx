@@ -1,4 +1,4 @@
-import { gradients } from "../lib/constants"
+import { gradients, card } from "../lib/constants"
 import { GithubIcon, LinkedInIcon, MailIcon } from "./Icon"
 import { useLanguage } from '../lib/LanguageContext';
 
@@ -11,7 +11,7 @@ export default function IntroductionCard() {
     ]    
 
     return (
-         <div className='flex flex-col text-2xl m-10 rounded-2xl w-full lg:w-2/3 mx-auto gap-10'>
+         <div className={`flex flex-col text-2xl m-10 rounded-2xl w-full lg:w-2/3 mx-auto gap-10 ${card.textHeaderColor}`}>
             <div className="text-center">
 	    	{t.intro.greeting}
             </div>
