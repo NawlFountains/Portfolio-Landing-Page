@@ -18,6 +18,11 @@ export const es = {
 	},
 	projects: [
 		{
+			name: 'When to wash',
+			description: "Aplicación web que analiza el pronóstico semanal de cualquier ubicación y te dice cuál es el mejor día para lavar tu auto.",
+		},
+
+		{
 			name: 'Textbook to Knowledge Graph',
 			description: 'Un pipeline completo de procesamiento de lenguaje natural (NLP) que ingiere documentos académicos, extrae entidades y relaciones semánticas, y genera un gráfico de conocimiento interactivo.',
 		},

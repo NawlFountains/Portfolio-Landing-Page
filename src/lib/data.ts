@@ -1,6 +1,22 @@
 export const projectsMeta = [
 	{
 		stack: [
+			'React',
+			'TypeScript',
+			'Vite',
+			'Vitest',
+			'OpenMeteo',
+			'Tailwind CSS',
+			'Leaflet',
+			'react-leaflet',
+		],
+		repo_link: 'https://github.com/NawlFountains/when-to-wash',
+		live_demo_link: 'https://when-to-wash-iota.vercel.app',
+		icon_path: '/icon/when_to_wash_icon.png',
+		showcase_video_path: '/images/when_to_wash_demo.png'
+	},
+	{
+		stack: [
 			'Python',
 			'spaCy',
 			'NetworkX',
@@ -98,7 +114,7 @@ export const projectsMeta = [
 
 export const stackMeta = [
 	{ tools: ['Tensorflow', 'PyTorch', 'Plotly', 'Pandas', 'Numpy', 'Scipy', 'RAGAS', 'LangChain', 'Qdrant', 'spaCy', 'NetworkX', 'PyMuPDF', 'Tesseract OCR', 'TextRank'] },
-	{ tools: ['React', 'React Router','Tailwind CSS', 'FastAPI', 'Next.js','Node.js', 'Streamlit'] },
+	{ tools: ['React', 'React Router','Tailwind CSS', 'FastAPI', 'Next.js','Node.js', 'Streamlit', 'Leaflet', 'Vitest' ] },
 	{ tools: ['Expo' , 'Expo-Router', 'Expo-Notifications', 'NativeWind', 'Kotlin', 'Jetpack Compose'] } ,
         { tools: ['Python', 'Typescript', 'Java', 'C'] },
         { tools: ['CI/CD', 'Docker', 'Github Actions'] },	

@@ -18,6 +18,10 @@ export const en = {
 	},
 	projects: [
 		{
+			name: 'When to wash',
+			description: "A front-end app that ranks the week's forecast for any location and tells you the best day to wash your car.",
+		},
+		{
 			name: 'Textbook to Knowledge Graph',
 			description: 'An end-to-end natural language processing (NLP) pipeline that ingests academic documents, extracts entities and semantic relationships, and generates an interactive knowledge graph.',
 		},
