@@ -21,7 +21,10 @@ export const es = {
 			name: 'When to wash',
 			description: "Aplicación web que analiza el pronóstico semanal de cualquier ubicación y te dice cuál es el mejor día para lavar tu auto.",
 		},
-
+		{
+			name: 'Matrix helper',
+			description: "Calculadora de matrices interactiva que soporta suma, resta, multiplicación, transpuesta y determinante con soluciones paso a paso. Incluye redimensionamiento dinámico, intercambio de matrices y cobertura de tests con Vitest y Playwright.",
+		},
 		{
 			name: 'Textbook to Knowledge Graph',
 			description: 'Un pipeline completo de procesamiento de lenguaje natural (NLP) que ingiere documentos académicos, extrae entidades y relaciones semánticas, y genera un gráfico de conocimiento interactivo.',

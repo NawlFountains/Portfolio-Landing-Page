@@ -22,6 +22,10 @@ export const en = {
 			description: "A front-end app that ranks the week's forecast for any location and tells you the best day to wash your car.",
 		},
 		{
+			name: 'Matrix helper',
+			description: "An interactive matrix calculator that supports addition, subtraction, multiplication, transpose, and determinant operations with step-by-step solutions. Features dynamic matrix resizing, matrix swapping, and full test coverage with Vitest unit tests and Playwright E2E tests.",
+		},
+		{
 			name: 'Textbook to Knowledge Graph',
 			description: 'An end-to-end natural language processing (NLP) pipeline that ingests academic documents, extracts entities and semantic relationships, and generates an interactive knowledge graph.',
 		},

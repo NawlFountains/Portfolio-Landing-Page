@@ -17,6 +17,20 @@ export const projectsMeta = [
 	},
 	{
 		stack: [
+			'React',
+			'TypeScript',
+			'Vite',
+			'Vitest',
+			'Playwright',
+			'Tailwind CSS',
+		],
+		repo_link: 'https://github.com/NawlFountains/matrix-helper',
+		live_demo_link: 'https://matrix-helper.vercel.app/',
+		icon_path: '/icon/matrix_helper_icon.ico',
+		showcase_video_path: '/videos/matrix_helper_demo.gif'
+	},
+	{
+		stack: [
 			'Python',
 			'spaCy',
 			'NetworkX',
@@ -114,7 +128,7 @@ export const projectsMeta = [
 
 export const stackMeta = [
 	{ tools: ['Tensorflow', 'PyTorch', 'Plotly', 'Pandas', 'Numpy', 'Scipy', 'RAGAS', 'LangChain', 'Qdrant', 'spaCy', 'NetworkX', 'PyMuPDF', 'Tesseract OCR', 'TextRank'] },
-	{ tools: ['React', 'React Router','Tailwind CSS', 'FastAPI', 'Next.js','Node.js', 'Streamlit', 'Leaflet', 'Vitest' ] },
+	{ tools: ['React', 'React Router','Tailwind CSS', 'FastAPI', 'Next.js','Node.js', 'Streamlit', 'Leaflet', 'Vitest', 'Playwright' ] },
 	{ tools: ['Expo' , 'Expo-Router', 'Expo-Notifications', 'NativeWind', 'Kotlin', 'Jetpack Compose'] } ,
         { tools: ['Python', 'Typescript', 'Java', 'C'] },
         { tools: ['CI/CD', 'Docker', 'Github Actions'] },	
