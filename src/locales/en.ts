@@ -18,6 +18,10 @@ export const en = {
 	},
 	projects: [
 		{
+			name: 'La comanda',
+			description: 'A full-featured food inventory and order management system designed to streamline kitchen operations. Automatically updating stock on operations.'
+		},
+		{
 			name: 'When to wash',
 			description: "A front-end app that ranks the week's forecast for any location and tells you the best day to wash your car.",
 		},

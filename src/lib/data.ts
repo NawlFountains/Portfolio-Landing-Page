@@ -3,6 +3,25 @@ export const projectsMeta = [
 		stack: [
 			'React',
 			'TypeScript',
+			'Tailwind CSS',
+			'Vite',
+			'FastAPI',
+			'SQLAlchemy',
+			'PostgreSQL on Supabase',
+			'Python',
+			'Pytest',
+			'Alembic',
+			'Pydantic'
+		],
+		repo_link: 'https://github.com/NawlFountains/la-comanda',
+		live_demo_link: 'https://la-comanda-manager.vercel.app',
+		icon_path: '/icon/la_comanda_icon.ico',
+		showcase_video_path: '/images/la_comanda_demo.png'
+	},
+	{
+		stack: [
+			'React',
+			'TypeScript',
 			'Vite',
 			'Vitest',
 			'OpenMeteo',
@@ -128,7 +147,7 @@ export const projectsMeta = [
 
 export const stackMeta = [
 	{ tools: ['Tensorflow', 'PyTorch', 'Plotly', 'Pandas', 'Numpy', 'Scipy', 'RAGAS', 'LangChain', 'Qdrant', 'spaCy', 'NetworkX', 'PyMuPDF', 'Tesseract OCR', 'TextRank'] },
-	{ tools: ['React', 'React Router','Tailwind CSS', 'FastAPI', 'Next.js','Node.js', 'Streamlit', 'Leaflet', 'Vitest', 'Playwright' ] },
+	{ tools: ['React', 'React Router','Tailwind CSS', 'FastAPI', 'Next.js','Node.js', 'Streamlit', 'Leaflet', 'Vitest', 'Pytest', 'Playwright' ] },
 	{ tools: ['Expo' , 'Expo-Router', 'Expo-Notifications', 'NativeWind', 'Kotlin', 'Jetpack Compose'] } ,
         { tools: ['Python', 'Typescript', 'Java', 'C'] },
         { tools: ['CI/CD', 'Docker', 'Github Actions'] },	

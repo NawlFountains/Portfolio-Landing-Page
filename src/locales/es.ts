@@ -18,6 +18,10 @@ export const es = {
 	},
 	projects: [
 		{
+			name: 'La comanda',
+			description: 'Un sistema completo de gestión de inventario de alimentos y pedidos diseñado para optimizar las operaciones de cocina. Actualizando constantemente el inventario segun las operaciones.'
+		},
+		{
 			name: 'When to wash',
 			description: "Aplicación web que analiza el pronóstico semanal de cualquier ubicación y te dice cuál es el mejor día para lavar tu auto.",
 		},
