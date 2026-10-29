@@ -6,6 +6,22 @@ export const projectsMeta = [
 			'Tailwind CSS',
 			'Vite',
 			'FastAPI',
+			'FastF1',
+			'Python',
+			'Pandas'
+		],
+		repo_link: 'https://github.com/NawlFountains/F1-Dashboard',
+		live_demo_link: 'https://f1-dashboard-ivory-eta.vercel.app/',
+		icon_path: '',
+		showcase_video_path: '/videos/f1_dashboard_demo.gif'
+	},
+	{
+		stack: [
+			'React',
+			'TypeScript',
+			'Tailwind CSS',
+			'Vite',
+			'FastAPI',
 			'SQLAlchemy',
 			'PostgreSQL on Supabase',
 			'Python',

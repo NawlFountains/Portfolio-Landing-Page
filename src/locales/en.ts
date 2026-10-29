@@ -18,6 +18,10 @@ export const en = {
 	},
 	projects: [
 		{
+			name: 'F1 Dashboard',
+			description: 'Using a custom pipeline to ingest official FIA documents, this web app provides F1 fans with each team\'s upgrades in the GP, session telemetry and more. It uses FastF1 to get telemetry data, and implements a cache strategy to diminish latency.',
+		},
+		{
 			name: 'La comanda',
 			description: 'A full-featured food inventory and order management system designed to streamline kitchen operations. Automatically updating stock on operations.'
 		},

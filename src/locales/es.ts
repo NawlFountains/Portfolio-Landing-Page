@@ -18,6 +18,10 @@ export const es = {
 	},
 	projects: [
 		{
+			name: 'F1 Dashboard',
+			description: 'Usando un pipeline personalizado para ingerir documentos oficiales de la FIA, esta aplicación web proporciona a los fanáticos de F1 las mejoras de cada equipo en el GP, telemetría de sesiones y más. Utiliza FastF1 para obtener datos de telemetría e implementa una estrategia de caché para optimizar el rendimiento.',
+		},
+		{
 			name: 'La comanda',
 			description: 'Un sistema completo de gestión de inventario de alimentos y pedidos diseñado para optimizar las operaciones de cocina. Actualizando constantemente el inventario segun las operaciones.'
 		},
